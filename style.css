@@ -333,3 +333,30 @@ img {width: 100%;}
     bottom: 12rem; right: -1.5rem;
     transform: rotate(-15deg);
 }
+
+
+/* popular */
+.popular_container {
+    grid-template-columns: 250px;
+    justify-content: center;
+    gap: 5.5rem;
+}
+.popular_container .popular_card {
+    position: relative;
+    background-color: var(--container-color);
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(201, 94, 44, 0.08);
+    border-radius: 1rem;
+    padding: 7rem 2rem 1.5rem;
+}
+.popular_img {
+    width: 220px;
+    margin: 0 auto;
+    position: absolute;
+    inset: 0;
+    top: -2.5rem;
+    transition: 0.4s;
+}
+.popular_card:hover .popular_img {
+    transform: translateY(-0.25rem);
+}

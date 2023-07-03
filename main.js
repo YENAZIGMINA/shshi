@@ -74,4 +74,16 @@ window.addEventListener("scroll",scrollHeader)
 
 
 //Reveal animation (사이트 참고)
-ScrollReveal().reveal('.home_img' , {origin:'top', distance:'60px', duration: 2500, delay:400 });
+ScrollReveal().reveal('.home_img, .about_date, .about_img', {
+    origin:'top', 
+    distance:'60px', 
+    duration: 2500, 
+    delay:400 ,
+    reset: true
+});
+
+
+
+ScrollReveal().reveal('.home_img', {origin:'bottom'});
+ScrollReveal().reveal('.about_date', {origin:'left'});
+ScrollReveal().reveal('.about_img', {origin:'right'});
